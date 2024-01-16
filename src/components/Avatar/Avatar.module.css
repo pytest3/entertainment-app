@@ -1,0 +1,14 @@
+.avatar {
+  width: 24px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid white;
+
+  @media (min-width: 550px) {
+    width: 32px;
+  }
+
+  @media (min-width: 1100px) {
+    width: 40px;
+  }
+}

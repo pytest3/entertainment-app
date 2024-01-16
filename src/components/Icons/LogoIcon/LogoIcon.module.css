@@ -1,0 +1,14 @@
+.logoIcon {
+  width: 25px;
+  height: 20px;
+
+  @media (min-width: 550px) {
+    width: 32px;
+    height: 25.6px;
+  }
+}
+
+.loginLogoIcon {
+  width: 32px;
+  height: 25.6px;
+}

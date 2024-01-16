@@ -1,0 +1,38 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  padding: 16px;
+  background: var(--color-semi-dark-blue);
+
+  @media (min-width: 550px) {
+    padding: 24px;
+  }
+
+  @media (min-width: 1100px) {
+    flex-direction: column;
+    padding: 28px;
+    width: fit-content;
+    height: min(960px, 100dvh);
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  gap: 24px;
+
+  @media (min-width: 550px) {
+    gap: 32px;
+  }
+
+  @media (min-width: 1100px) {
+    gap: 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 75px;
+  }
+}

@@ -1,0 +1,8 @@
+.thumbNail {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+}
