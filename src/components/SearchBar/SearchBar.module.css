@@ -2,15 +2,19 @@
   display: flex;
   gap: 24px;
   align-items: center;
+
+  @media (min-width: 1100px) {
+    margin-bottom: 20px;
+  }
 }
 
 .icon {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   stroke: white;
   @media (min-width: 550px) {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
 
   @media (min-width: 1100px) {
