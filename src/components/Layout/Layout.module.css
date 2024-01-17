@@ -1,0 +1,51 @@
+.contentGrid {
+  display: grid;
+  grid-template-columns: [grid-inline-start] 16px [content-start] 1fr [content-end] 16px [grid-inline-end];
+  grid-template-rows: auto auto 1fr;
+  gap: 24px 0px;
+
+  @media (min-width: 550px) {
+    grid-template-columns: [grid-inline-start] 24px [content-start] 1fr [content-end] 24px [grid-inline-end];
+    padding-top: 24px;
+    gap: 33px 0px;
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "nav search"
+      "nav content";
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 36px;
+    gap: 0 36px;
+  }
+}
+
+.contentGrid > * {
+  grid-column: content;
+}
+
+.navBar {
+  grid-column: grid-inline;
+  @media (min-width: 550px) {
+    grid-column: content;
+  }
+
+  @media (min-width: 1100px) {
+    grid-area: nav;
+  }
+}
+
+.searchBar {
+  @media (min-width: 1100px) {
+    grid-area: search;
+  }
+}
+
+.outlet {
+  @media (min-width: 1100px) {
+    grid-area: content;
+  }
+}

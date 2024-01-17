@@ -5,9 +5,10 @@ import HomeIcon from "../Icons/HomeIcon";
 import BookIcon from "../Icons/BookIcon";
 import BookMarkIcon from "../Icons/BookMarkIcon";
 
-export default function NavBar() {
+export default function NavBar({ className }) {
+  const appliedClass = `${styles.navBar} ${className}`;
   return (
-    <div className={styles.navBar}>
+    <div className={appliedClass}>
       <LogoIcon />
       <div className={styles.actions}>
         <HomeIcon />
