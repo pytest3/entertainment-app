@@ -1,0 +1,19 @@
+.trendingVideos {
+  overflow: auto;
+  display: flex;
+  gap: 16px;
+  @media (min-width: 550px) {
+    gap: 40px;
+  }
+}
+
+.trendingThumbNail {
+  min-width: 240px;
+  width: 100%;
+  height: 140px;
+  @media (min-width: 550px) {
+    min-width: 470px;
+    height: 230px;
+  }
+  background-position: 0% 45%;
+}

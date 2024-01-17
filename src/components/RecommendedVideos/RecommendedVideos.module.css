@@ -1,0 +1,36 @@
+.recommendedVideos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
+  gap: 15px;
+  align-content: start;
+  justify-items: center;
+
+  @media (min-width: 550px) {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+.recommendedThumbnail {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-position: 10% 18%;
+  max-height: 130px;
+
+  @media (min-width: 550px) {
+    max-height: 150px;
+  }
+
+  @media (min-width: 1100px) {
+    max-height: 180px;
+  }
+}
+
+.videoWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
