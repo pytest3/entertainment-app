@@ -1,8 +1,23 @@
+.overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .thumbNail {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-
+  cursor: pointer;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      .overlay {
+        display: revert;
+      }
+    }
+  }
 }

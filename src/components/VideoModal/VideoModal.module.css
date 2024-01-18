@@ -1,0 +1,36 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: hsl(0deg 0% 0% / 0.75);
+}
+
+.content {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  aspect-ratio: 16/9;
+  max-height: 100%;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translateY(-100%);
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+
+  @media (min-width: 550px) {
+    transform: revert;
+
+    & > svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

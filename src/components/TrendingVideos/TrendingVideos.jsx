@@ -2,17 +2,27 @@ import styles from "./TrendingVideos.module.css";
 import ThumbNail from "../ThumbNail";
 import VideoWrapper from "../VideoWrapper";
 import VideoDescription from "../VideoDescription";
+import { Dialog, DialogTrigger, DialogContent } from "../VideoModal";
+import VideoPlayer from "../VideoPlayer";
 
 export default function TrendingVideos() {
   return (
     <div className={styles.trendingVideos}>
-      <VideoWrapper>
-        <ThumbNail
-          src="/ballet-lesson.jpeg"
-          className={styles.trendingThumbNail}
-        />
-        <VideoDescription title="Ballet Lesson" variant="trending" />
-      </VideoWrapper>
+      <Dialog>
+        <DialogTrigger asChild>
+          <VideoWrapper>
+            <ThumbNail
+              src="/ballet-lesson.jpeg"
+              className={styles.trendingThumbNail}
+            />
+            <VideoDescription title="Ballet Lesson" variant="trending" />
+          </VideoWrapper>
+        </DialogTrigger>
+        <DialogContent>
+          <VideoPlayer url="https://www.youtube.com/watch?v=ZJ6JfDSPD5U" />
+        </DialogContent>
+      </Dialog>
+
       <VideoWrapper>
         <ThumbNail
           src="/daddy-pigs-office.jpeg"
