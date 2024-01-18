@@ -41,6 +41,7 @@ h6 {
 :root {
   background: black;
   font-family: Outfit;
+  -webkit-tap-highlight-color: transparent;
 
   /* +++++++++++++++++++++++++++++++++++++++++++++
   1. COLOR 

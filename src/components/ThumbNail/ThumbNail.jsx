@@ -5,6 +5,7 @@ import BookMarkButton from "../BookMarkButton";
 
 const ThumbNail = React.forwardRef(({ src, className = "", ...rest }, ref) => {
   const [isHover, setIsHover] = React.useState(false);
+  const [isBookmarked, setIsBookmarked] = React.useState(false);
   const appliedStyles = `${styles.thumbNail} ${className}`;
 
   return (
@@ -19,12 +20,17 @@ const ThumbNail = React.forwardRef(({ src, className = "", ...rest }, ref) => {
         setIsHover(false);
       }}
       style={{
-        backgroundImage: isHover
-          ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${src})`
-          : `url(${src})`,
+        backgroundImage: `url(${src})`,
       }}
     >
-      <BookMarkButton />
+      <div className={styles.overlay} />
+      <BookMarkButton
+        onClick={(e) => {
+          setIsBookmarked(!isBookmarked);
+          e.stopPropagation();
+        }}
+        isBookmarked={isBookmarked}
+      />
       {isHover ? <PlayButton>Play</PlayButton> : null}
     </div>
   );

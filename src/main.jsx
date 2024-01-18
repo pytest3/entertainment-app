@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import BookmarksPage from "./pages/BookmarksPage";
 import BooksPage from "./pages/BooksPage";
+import WatchPage from "./pages/WatchPage/WatchPage.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Root />, errorElement: <ErrorPage /> },
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "home", element: <HomePage /> },
       { path: "bookmarks", element: <BookmarksPage /> },
       { path: "books", element: <BooksPage /> },
+      { path: "watch", element: <WatchPage /> },
     ],
   },
 ]);

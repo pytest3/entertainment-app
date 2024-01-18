@@ -11,22 +11,22 @@
   place-content: center;
   cursor: pointer;
 
-  &:hover {
-    background: white;
+  /* &:hover {
+  background: white;
 
     & .icon {
       fill: white;
       color: var(--color-semi-dark-blue);
     }
-  }
+  } */
 
-  &:active {
+  /* &:active {
     background: var(--color-semi-dark-blue);
     & .icon {
       fill: white;
       color: white;
     }
-  }
+  } */
 
   @media (min-width: 550px) {
     top: 16px;
@@ -42,5 +42,10 @@
   height: 24px;
   width: 19px;
   fill: var(--color-semi-dark-blue);
+  color: white;
+}
+
+.bookMarked {
+  fill: white;
   color: white;
 }
