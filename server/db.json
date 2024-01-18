@@ -1,0 +1,23 @@
+{
+  "posts": [
+    { "id": "1", "title": "a title" },
+    { "id": "2", "title": "another title" }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "books": [
+    {
+      "id": "1",
+      "url": "https://www.youtube.com/watch?v=Zlp3Aif6jJA",
+      "title": "ballet lesson",
+      "thumbnail": "/ballet-lesson.jpeg",
+      "year": "2023",
+      "type": "book"
+    }
+  ]
+}
