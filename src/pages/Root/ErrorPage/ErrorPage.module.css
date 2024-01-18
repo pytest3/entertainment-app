@@ -1,0 +1,24 @@
+.errorPage {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: 100dvh;
+  color: white;
+  background: black;
+  gap: 20px;
+}
+
+.backBtn {
+  text-decoration: none;
+  color: white;
+  border-radius: 24px;
+  border: 1px solid white;
+  padding: 8px 24px 10px;
+  display: grid;
+  place-content: center;
+  margin-top: 40px;
+}
+
+.errorMsg {
+  color: var(--color-gray-300);
+}

@@ -10,7 +10,8 @@ export default function Layout() {
       <SearchBar className={styles.searchBar}>
         Search for movies or TV series
       </SearchBar>
-      <div className={styles.outlet} style={{ color: "white" }}>
+      <Outlet />
+      {/* <div className={styles.outlet} style={{ color: "white" }}>
         lotsofwords lots of wordslotsofwords lots of wordslotsofwords lots of
         words lotsofwords lots of words lotsofwords lots of words lotsofwords
         lots of words lotsofwords lots of words lotsofwords lots of words
@@ -176,7 +177,7 @@ export default function Layout() {
         lotsofwords lots of words lotsofwords lots of words lotsofwords lots of
         words lotsofwords lots of words lotsofwords lots of words lotsofwords
         lots of words lotsofwords lots of words
-      </div>
+      </div> */}
     </div>
   );
 }
