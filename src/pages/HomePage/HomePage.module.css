@@ -1,0 +1,26 @@
+.homePage {
+  color: white;
+  display: grid;
+  grid-template-rows: 181px 1fr;
+  gap: 33px;
+
+  @media (min-width: 550px) {
+    gap: 40px;
+    grid-template-rows: 295px 1fr;
+  }
+}
+
+.trendingSegment {
+  display: grid;
+  gap: 16px;
+}
+
+.recommendedSegment {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 24px;
+
+  @media (min-width: 1100px) {
+    gap: 32px;
+  }
+}

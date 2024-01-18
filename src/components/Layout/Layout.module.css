@@ -3,6 +3,7 @@
   grid-template-columns: [grid-inline-start] 16px [content-start] 1fr [content-end] 16px [grid-inline-end];
   grid-template-rows: auto auto 1fr;
   gap: 24px 0px;
+  height: 100dvh;
 
   @media (min-width: 550px) {
     grid-template-columns: [grid-inline-start] 24px [content-start] 1fr [content-end] 24px [grid-inline-end];

@@ -1,0 +1,20 @@
+.root {
+  color: white;
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+  gap: 20px;
+}
+
+.homeBtn {
+  text-decoration: none;
+  color: white;
+  background: var(--color-primary);
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: grid;
+  justify-content: center;
+  max-width: 150px;
+  align-items: center;
+  justify-self: center;
+}

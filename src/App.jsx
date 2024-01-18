@@ -9,6 +9,7 @@ import BookIcon from "./components/Icons/BookIcon";
 import BookMarkIcon from "./components/Icons/BookMarkIcon";
 import NavBar from "./components/NavBar";
 import Layout from "./components/Layout";
+import { createBrowserRouter } from "react-router-dom";
 
 function App() {
   // const router = createBrowserRouter([{ path: "/", element: <Layout /> }]);
@@ -28,7 +29,6 @@ function App() {
       <BookMarkIcon />
       <BookMarkIcon isActive />
       <NavBar /> */}
-
       <Layout />
     </>
   );

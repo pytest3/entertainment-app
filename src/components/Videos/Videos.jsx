@@ -1,24 +1,25 @@
 import ThumbNail from "../ThumbNail";
-import styles from "./RecommendedVideos.module.css";
+import styles from "./Videos.module.css";
 import VideoDescription from "../VideoDescription";
 import VideoWrapper from "../VideoWrapper";
 
-export default function RecommendedVideos() {
+export default function Videos({ videos, className = "" }) {
+  const appliedClass = `${styles.videos} ${className}`;
   return (
-    <div className={styles.recommendedVideos}>
+    <div className={appliedClass}>
       <VideoWrapper>
         <ThumbNail
           className={styles.recommendedThumbnail}
           src="./daddy-pigs-office.jpeg"
         />
-        <VideoDescription title="Daddy pig's office" variant="recommended" />
+        <VideoDescription title="Daddy pig's office" />
       </VideoWrapper>
       <VideoWrapper>
         <ThumbNail
           className={styles.recommendedThumbnail}
           src="./ballet-lesson.jpeg"
         />
-        <VideoDescription title="Ballet Lesson" variant="recommended" />
+        <VideoDescription title="Ballet Lesson" />
       </VideoWrapper>
       <VideoWrapper>
         <ThumbNail
@@ -35,7 +36,7 @@ export default function RecommendedVideos() {
           className={styles.recommendedThumbnail}
           src="./ballet-lesson.jpeg"
         />
-        <VideoDescription title="Ballet Lesson" variant="recommended" />
+        <VideoDescription title="Ballet Lesson" />
       </VideoWrapper>
     </div>
   );
