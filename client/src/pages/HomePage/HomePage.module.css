@@ -1,12 +1,12 @@
 .homePage {
   color: white;
   display: grid;
-  grid-template-rows: 181px 1fr;
+  grid-template-rows: auto 1fr;
   gap: 33px;
 
   @media (min-width: 550px) {
     gap: 40px;
-    grid-template-rows: 295px 1fr;
+    grid-template-rows: auto 1fr;
   }
 }
 

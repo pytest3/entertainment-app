@@ -10,10 +10,10 @@
 .trendingThumbNail {
   min-width: 240px;
   width: 100%;
-  height: 140px;
+  min-height: 140px;
   @media (min-width: 550px) {
     min-width: 470px;
-    height: 230px;
+    min-height: 200px;
   }
   background-position: 0% 45%;
 }
