@@ -15,14 +15,15 @@ const router = createBrowserRouter([
   { path: "/", element: <Root />, errorElement: <ErrorPage /> },
   {
     element: <Layout />,
+    loader: booksLoader,
     children: [
       {
         path: "home",
         element: <HomePage />,
         loader: booksLoader,
       },
-      { path: "bookmarks", element: <BookmarksPage /> },
-      { path: "books", element: <BooksPage /> },
+      { path: "bookmarks", element: <BookmarksPage />, loader: booksLoader },
+      { path: "books", element: <BooksPage />, loader: booksLoader },
       {
         path: "upload",
         element: <Upload />,

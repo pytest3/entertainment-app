@@ -14,7 +14,6 @@ export default function Upload() {
         method="post"
         action="/upload"
       >
-        <input type="hidden" name="action" value="upload" />
         <label htmlFor="url">Url</label>
         <input
           id="url"
@@ -48,7 +47,9 @@ export default function Upload() {
           defaultValue="false"
         ></input>
 
-        <button>Upload</button>
+        <button name="intent" value="upload">
+          Upload
+        </button>
       </Form>
     </div>
   );
