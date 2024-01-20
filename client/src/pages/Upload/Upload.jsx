@@ -12,8 +12,9 @@ export default function Upload() {
         ref={formRef}
         style={{ color: "white", display: "grid" }}
         method="post"
-        action="/test"
+        action="/upload"
       >
+        <input type="hidden" name="action" value="upload" />
         <label htmlFor="url">Url</label>
         <input
           id="url"
