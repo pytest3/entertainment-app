@@ -4,7 +4,7 @@ import NavBar from "../NavBar";
 import SearchBar from "../SearchBar";
 import { Outlet } from "react-router";
 import PageTemplate from "../../pages/PageTemplate";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation } from "react-router-dom";
 
 export default function Layout() {
   const [searchStatus, setSearchStatus] = React.useState({
@@ -13,7 +13,6 @@ export default function Layout() {
   });
 
   const videos = useLoaderData();
-  console.log(videos);
 
   const filteredVideos = videos.filter((video) =>
     video?.title.includes(searchStatus.searchTerm)

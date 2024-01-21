@@ -10,7 +10,7 @@
   display: grid;
   place-content: center;
   cursor: pointer;
-
+  border: none;
   /* &:hover {
   background: white;
 
@@ -19,7 +19,6 @@
       color: var(--color-semi-dark-blue);
     }
   } */
-
   /* &:active {
     background: var(--color-semi-dark-blue);
     & .icon {
@@ -27,7 +26,6 @@
       color: white;
     }
   } */
-
   @media (min-width: 550px) {
     top: 16px;
     right: 16px;

@@ -21,9 +21,19 @@ const router = createBrowserRouter([
         path: "home",
         element: <HomePage />,
         loader: booksLoader,
+        action: booksAction,
       },
-      { path: "bookmarks", element: <BookmarksPage />, loader: booksLoader },
-      { path: "books", element: <BooksPage />, loader: booksLoader },
+      {
+        path: "bookmarks",
+        element: <BookmarksPage />,
+        loader: booksLoader,
+        action: booksAction,
+      },
+      {
+        path: "books",
+        element: <BooksPage />,
+        loader: booksLoader,
+      },
       {
         path: "upload",
         element: <Upload />,
