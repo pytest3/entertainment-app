@@ -1,11 +1,25 @@
 {
   "posts": [
-    { "id": "1", "title": "a title" },
-    { "id": "2", "title": "another title" }
+    {
+      "id": "1",
+      "title": "a title"
+    },
+    {
+      "id": "2",
+      "title": "another title"
+    }
   ],
   "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ],
   "profile": {
     "name": "typicode"
@@ -17,7 +31,90 @@
       "title": "ballet lesson",
       "thumbnail": "/ballet-lesson.jpeg",
       "year": "2023",
-      "type": "book"
+      "type": "trending",
+      "bookmarked": "true"
+    },
+    {
+      "id": "2",
+      "url": "https://www.youtube.com/watch?v=JZJssSbjIJ0",
+      "title": "a trip to the moon",
+      "thumbnail": "/a-trip-to-the-moon.jpeg",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "false"
+    },
+    {
+      "id": "3",
+      "url": "https://www.youtube.com/watch?v=gQdasZ11iEo",
+      "title": "bicycle race",
+      "thumbnail": "/bicycle-race.jpeg",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "false"
+    },
+    {
+      "id": "7251",
+      "url": "https://www.youtube.com/watch?v=Zlp3Aif6jJA",
+      "title": "fun at the fair",
+      "thumbnail": "/fun-at-the-fair.jpeg",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "false"
+    },
+    {
+      "id": "b927",
+      "url": "https://www.youtube.com/watch?v=Zlp3Aif6jJA",
+      "title": "dentist trip",
+      "thumbnail": "/dentist-trip.jpeg",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "false"
+    },
+    {
+      "id": "c48c",
+      "url": "https://www.youtube.com/watch?v=Zlp3Aif6jJA",
+      "title": "the wishing well",
+      "thumbnail": "/the-wishing-well.jpeg",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "false"
+    },
+    {
+      "id": "5e22",
+      "url": "https://www.youtube.com/watch?v=Zlp3Aif6jJA",
+      "title": "the toy cupboard",
+      "thumbnail": "/the-toy-cupboard.jpeg",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "true"
+    },
+    {
+      "id": "ecd2",
+      "url": "https://www.youtube.com/watch?v=Zlp3Aif6jJA",
+      "title": "georges balloon",
+      "thumbnail": "/georges-balloon.jpeg",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "false"
+    },
+    {
+      "id": "ecd4",
+      "url": "https://www.youtube.com/watch?v=Zlp3Aif6jJA",
+      "title": "peppa plays basketball",
+      "thumbnail": "/peppa-plays-basketball.jpeg",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "false"
+    },
+    {
+      "id": "0fab",
+      "url": "https://www.youtube.com/watch?v=Zlp3Aif6jJA",
+      "title": "wdf",
+      "thumbnail": "/dentist-trip",
+      "year": "2023",
+      "type": "trending",
+      "bookmarked": "false",
+      "intent": "upload"
     }
   ]
 }

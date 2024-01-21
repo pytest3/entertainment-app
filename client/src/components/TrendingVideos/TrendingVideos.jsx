@@ -9,11 +9,16 @@ import { useLoaderData } from "react-router-dom";
 export default function TrendingVideos({ trendingVideos }) {
   return (
     <div className={styles.trendingVideos}>
-      {trendingVideos.map(({ id, url, title, thumbnail }) => (
+      {trendingVideos.map(({ id, url, title, thumbnail, bookmarked }) => (
         <Dialog key={id}>
           <DialogTrigger asChild>
             <VideoWrapper>
-              <ThumbNail src={thumbnail} className={styles.trendingThumbNail} />
+              <ThumbNail
+                id={id}
+                bookmarked={bookmarked}
+                src={thumbnail}
+                className={styles.trendingThumbNail}
+              />
               <VideoDescription title={title} variant="trending" />
             </VideoWrapper>
           </DialogTrigger>

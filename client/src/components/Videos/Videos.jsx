@@ -4,27 +4,32 @@ import VideoDescription from "../VideoDescription";
 import VideoWrapper from "../VideoWrapper";
 import { Dialog, DialogTrigger, DialogContent } from "../VideoModal";
 import VideoPlayer from "../VideoPlayer";
+import React from "react";
 
-export default function Videos({ videos, className = "" }) {
+const Videos = React.memo(({ videos, className = "" }) => {
   const appliedClass = `${styles.videos} ${className}`;
   return (
     <div className={appliedClass}>
-      {videos?.map((video) => (
-        <Dialog key={video.id}>
+      {videos?.map(({ id, thumbnail, bookmarked, title, url }) => (
+        <Dialog key={id}>
           <DialogTrigger asChild>
             <VideoWrapper>
               <ThumbNail
+                id={id}
                 className={styles.recommendedThumbnail}
-                src={video.thumbnail}
+                src={thumbnail}
+                bookmarked={bookmarked}
               />
-              <VideoDescription title={video.title} />
+              <VideoDescription title={title} />
             </VideoWrapper>
           </DialogTrigger>
           <DialogContent>
-            <VideoPlayer url={video.url} />
+            <VideoPlayer url={url} />
           </DialogContent>
         </Dialog>
       ))}
     </div>
   );
-}
+});
+
+export default Videos;

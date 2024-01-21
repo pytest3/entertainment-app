@@ -1,0 +1,9 @@
+.emptyBookmarks {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: var(--font-weight-light);
+  color: var(--color-gray-300);
+  font-size: 17px;
+}
