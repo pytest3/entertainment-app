@@ -5,7 +5,8 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-const url = "http://localhost:3001/api/books";
+// const url = `${import.meta.env.VITE_BACKEND_URL}/api/books`;
+const url = `/api/books`;
 
 export async function getAllBooks() {
   const res = await fetch(url);
