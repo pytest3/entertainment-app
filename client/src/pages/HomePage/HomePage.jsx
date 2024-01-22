@@ -10,7 +10,7 @@ export default function HomePage() {
 
   const trendingVideos = React.useMemo(() => videos.slice(0, 6), [videos]);
 
-  const recommendedVideos = React.useMemo(() => videos.slice(6), [videos]);
+  const recommendedVideos = React.useMemo(() => videos.slice(12), [videos]);
 
   return (
     <div className={styles.homePage}>
